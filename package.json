@@ -1,0 +1,14 @@
+{
+  "name": "prediction-list",
+  "version": "1.0.0",
+  "description": "Prediction list app for Zebra produce recognition",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Zebra",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.0"
+  }
+}
