@@ -1,3 +1,4 @@
+console.log("Hello from Electron")
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
 const createWindow = () => {
@@ -15,6 +16,7 @@ const createWindow = () => {
   }
 
   app.on('window-all-closed', () => {
+    console.log("Closing the application windows/linux ")
     if (process.platform !== 'darwin') app.quit()
   })
 
@@ -22,6 +24,7 @@ const createWindow = () => {
     createWindow()
   
     app.on('activate', () => {
+      console.log("Starting application on mac")
       if (BrowserWindow.getAllWindows().length === 0) createWindow()
     })
   })
