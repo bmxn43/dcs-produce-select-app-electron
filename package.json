@@ -9,6 +9,10 @@
   "author": "Zebra",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^28.1.0"
+    "electron": "^28.1.0",
+    "node-gyp": "^10.2.0"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.1.0"
   }
 }
